@@ -19,6 +19,6 @@ public class PlayerMove : MonoBehaviour
         transform.position += Vector3.right * dir * speed * Time.deltaTime;
 
         if (dir != 0)
-            transform.localScale = new Vector3(Mathf.Sign(dir), 1.5f, 1); // face direction
+            transform.localScale = new Vector3(Mathf.Sign(dir), 1f, 1); // face direction
     }
 }
